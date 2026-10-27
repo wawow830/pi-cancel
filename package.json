@@ -1,37 +1,8 @@
 {
   "name": "pi-cancel",
   "version": "0.1.0",
-  "description": "Pi extension that requires a double Escape to cancel a running agent, compaction, or retry.",
+  "description": "Double Escape to cancel in pi",
+  "keywords": ["pi-package"],
   "type": "module",
-  "license": "MIT",
-  "keywords": [
-    "pi-package"
-  ],
-  "files": [
-    "index.ts",
-    "README.md",
-    "LICENSE"
-  ],
-  "pi": {
-    "extensions": [
-      "./index.ts"
-    ]
-  },
-  "scripts": {
-    "test": "node --test test/*.test.ts",
-    "typecheck": "tsc --noEmit"
-  },
-  "engines": {
-    "node": ">=22.19.0"
-  },
-  "peerDependencies": {
-    "@earendil-works/pi-coding-agent": "*",
-    "@earendil-works/pi-tui": "*"
-  },
-  "devDependencies": {
-    "@earendil-works/pi-coding-agent": "1.4.0",
-    "@earendil-works/pi-tui": "1.4.0",
-    "@types/node": "^24.0.0",
-    "typescript": "^5.9.3"
-  }
+  "pi": { "extensions": ["./index.ts"] }
 }
